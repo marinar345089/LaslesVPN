@@ -1,0 +1,51 @@
+body {
+  font-family: "Rubik", sans-serif;
+  color: #4f5665;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0b132a;
+}
+.header {
+  padding-top: 45px;
+  padding-bottom: 88px;
+}
+.container {
+  max-width: 1135px;
+  margin: 0 auto;
+}
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.header__bold {
+  font-weight: 700;
+}
+.header__nav {
+  display: flex;
+  gap: 40px;
+}
+.header__link {
+}
+.header__links {
+}
+.header__btn {
+}
+.header__btn-red {
+}
