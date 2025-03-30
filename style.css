@@ -5,6 +5,7 @@ body {
 body {
   font-family: "Rubik", sans-serif;
   color: #4f5665;
+  background-color: #f6f6f6;
 }
 h1,
 h2,
@@ -73,13 +74,12 @@ h6 {
   border: 1px solid #f53855;
 }
 .home {
-  padding: 129px 0px;
+  padding-bottom: 95px;
 }
 .home__row {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between
   gap: 40px;
+  margin-bottom: 103px;
 }
 .home__info {
 }
@@ -98,8 +98,7 @@ h6 {
   margin-bottom: 50px;
 }
 .home__btn {
-  width: 250px;
-  height: 60px;
+  padding: 17.5px 77.5px;
   color: #ffffff;
   font-weight: 700;
   font-size: 16px;
@@ -107,12 +106,45 @@ h6 {
   background-color: #f53838;
 }
 .home__img {
-  max-width: 611px;
+  max-width: 570px;
+}
+.home__list {
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 37px 91px;
+  display: flex;
 }
 .home__table {
   display: flex;
   flex-direction: column;
+  gap: 5px;
+}
+.home__table p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.home__item {
+  display: flex;
+  gap: 36.5px;
   align-items: center;
+}
+.home__icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #ffecec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home__line {
+  height: 125.5px;
+  width: 2px;
+  background-color: #eeeff2;
 }
 .home__tabletitle {
   font-weight: 700;
@@ -127,100 +159,117 @@ h6 {
 .about__row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 .about__img {
-  width: 508px;
+  max-width: 508px;
 }
 .about__info {
+  max-width: 427px;
 }
 .about__title {
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
   letter-spacing: 0%;
+  margin-bottom: 20px;
 }
 .about__subtitle {
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: #4f5665;
+  margin-bottom: 20px;
 }
 .about__list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0%;
 }
 .about__marker {
+  display: flex;
+  gap: 12px;
+  align-items: center;
 }
 .plan {
+  padding: 80.27px 0;
 }
 .plan__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .plan__title {
-  padding-top: 80px;
   font-weight: 500;
   font-size: 35px;
   line-height: 50px;
   letter-spacing: 0%;
-  text-align: center;
+  margin-bottom: 20px;
 }
 .plan__subtitle {
-  padding: 20px 60px;
+  font-weight: 400;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0%;
-  text-align: center;
+  margin-bottom: 60px;
+  align-items: center;
 }
-.plan__table{
-  display: flex;
-  justify-content: space-between;
+.plan__table {
+  padding: 79.63px 92.55px;
+  border: 2px solid #dddddd;
+  background-color: #ffffff;
 }
-.plan__title2 {
+.plan__img {
+  max-width: 144px;
+  margin-bottom: 30px;
+}
+.table__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
-  text-align: center;
+  margin-bottom: 30px;
 }
 .plan__list {
- width: 146;
-height: 30;
-font-weight: 400;
-font-size: 14px;
-line-height: 30px;
-letter-spacing: 0%;
-margin-bottom: 20px;
-  
+  margin-bottom: 130px;
 }
 .plan__marker {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10.27px;
 }
-.plan_subtitle2 {
-}
-.plan__btn {
-  
-}
-.button__btn-red_white {   
-  padding: 13px 45px;
+.table__subtitle {
   font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  margin-bottom: 33px;
+}
+.button__btn-red_white {
+  padding: 13px 50px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #f53855;
   border-radius: 50px;
+  background-color: #ffffff;
   border: 2px solid #f53855;
 }
-.button__btn-red {  padding: 13px 45px;
-  font-weight: 500;
+.button__btn-red {
+  padding: 13px 62.94px;
+  font-weight: 700;
   font-size: 16px;
   line-height: 100%;
   letter-spacing: 0%;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 50px;
-  border: 2px solid #f53855;
-  background-color: #F53838;
+  background-color: #f53838;
+  border: 1px solid #f53855;
 }
 .global {
 }
@@ -240,7 +289,7 @@ margin-bottom: 20px;
   line-height: 30px;
   letter-spacing: 0%;
   text-align: center;
-  color: #4F5665;
+  color: #4f5665;
 }
 .plan__map {
   width: 1059px;
@@ -269,11 +318,11 @@ margin-bottom: 20px;
   padding-bottom: 60px;
   text-align: center;
 }
-.feedback__block {  
-
+.feedback__block {
 }
-.feedback__photo {width: 50;
-  height: 50; 
+.feedback__photo {
+  width: 50;
+  height: 50;
 }
 .feedback_name {
   font-weight: 500;
@@ -286,7 +335,7 @@ margin-bottom: 20px;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: #4F5665;
+  color: #4f5665;
 }
 .rate {
   font-weight: 400;
@@ -300,8 +349,7 @@ margin-bottom: 20px;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-color: #0B132A;
-  
+  color: #0b132a;
 }
 .feedback__dots {
 }
@@ -331,34 +379,35 @@ color: #0B132A;
   line-height: 30px;
   letter-spacing: 0%;
 }
-.btn__subscribe { padding: 13px 45px;
+.btn__subscribe {
+  padding: 13px 45px;
   font-weight: 500;
   font-size: 16px;
   line-height: 25px;
   letter-spacing: 0%;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 10px;
   border: 2px solid #f53855;
-  background-color: #F53838;
+  background-color: #f53838;
   font-family: Rubik;
 }
 .footer {
   padding-top: 66px;
-  background-color:#F8F8F8;
+  padding-bottom: 100px;
+  background-color: #f8f8f8;
 }
 .footer__row {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
-.footer__logo {  
+.footer__logo {
 }
 .footer__title {
   font-weight: 500;
   font-size: 18px;
   line-height: 30px;
   letter-spacing: 0%;
-  
 }
 .footer__bold {
 }
@@ -371,7 +420,7 @@ justify-content: space-between;
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0%;
-  color: #AFB5C0;
+  color: #afb5c0;
 }
 .footer__column {
   display: flex;
@@ -382,5 +431,5 @@ justify-content: space-between;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
-  color: #4F5665;
+  color: #4f5665;
 }
