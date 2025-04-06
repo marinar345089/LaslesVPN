@@ -12,8 +12,23 @@
     />
     <link rel="stylesheet" href="./null.css" />
     <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
   </head>
   <body>
+    <div class="menu">
+      <button class="menu__close"><img src="./img/close.svg" alt="" /></button>
+      <nav class="header__nav">
+        <a href="#home" class="header__link">About</a>
+        <a href="#about" class="header__link">Features</a>
+        <a href="#plan" class="header__link">Pricing</a>
+        <a href="#global" class="header__link">Testimonials</a>
+        <a href="#subscribe" class="header__link">Help</a>
+      </nav>
+      <div class="header__links">
+        <a href="" class="header__btn">Sign In</a>
+        <a href="" class="header__btn header__btn-red">Sign Up</a>
+      </div>
+    </div>
     <header class="header">
       <div class="container">
         <div class="header__row">
@@ -23,12 +38,15 @@
               Lasles<span class="header__bold">VPN</span>
             </h3>
           </div>
+          <button class="header__burger">
+            <img src="./img/menu.svg" alt="" />
+          </button>
           <nav class="header__nav">
-            <a href="" class="header__link">About</a>
-            <a href="" class="header__link">Features</a>
-            <a href="" class="header__link">Pricing</a>
-            <a href="" class="header__link">Testimonials</a>
-            <a href="" class="header__link">Help</a>
+            <a href="#home" class="header__link">About</a>
+            <a href="#about" class="header__link">Features</a>
+            <a href="#plan" class="header__link">Pricing</a>
+            <a href="#global" class="header__link">Testimonials</a>
+            <a href="#subscribe" class="header__link">Help</a>
           </nav>
           <div class="header__links">
             <a href="" class="header__btn">Sign In</a>
@@ -87,7 +105,7 @@
           </div>
         </div>
       </section>
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="about__row">
             <img src="./img/illustration2.svg" alt="" class="about__img" />
@@ -122,7 +140,7 @@
           </div>
         </div>
       </section>
-      <section class="plan">
+      <section class="plan" id="plan">
         <div class="container">
           <h2 class="plan__title">Choose Your Plan</h2>
           <p class="plan__subtitle">
@@ -222,14 +240,16 @@
           </div>
         </div>
       </section>
-      <section class="global">
+      <section class="global" id="global">
         <div class="container">
-          <h2 class="global__title">Huge Global Network of Fast VPN</h2>
-          <p class="global__text">
-            See LaslesVPN everywhere to make it easier for you when you move
-            locations.
-          </p>
-          <img src="./img/map.svg" alt="" class="global__map" />
+          <div class="global__column">
+            <h2 class="global__title">Huge Global Network of Fast VPN</h2>
+            <p class="global__text">
+              See LaslesVPN everywhere to make it easier for you when you move
+              locations.
+            </p>
+            <img src="./img/map.svg" alt="" class="global__map" />
+          </div>
           <div class="global__sites">
             <img src="./img/netflix.svg" alt="" class="global__icon" />
             <img src="./img/reddit.svg" alt="" class="global__icon" />
@@ -295,7 +315,7 @@
           </div>
         </div>
       </section> -->
-      <section class="subscribe">
+      <section class="subscribe" id="subscribe">
         <div class="container">
           <div class="subscribe__row">
             <div class="subscribe__info">
@@ -333,28 +353,30 @@
           </div>
           <p class="footer__text2">©2020LaslesVPN</p>
         </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Product</h3>
-          <a href="" class="footer__link">Download</a>
-          <a href="" class="footer__link">Pricing</a>
-          <a href="" class="footer__link">Locations</a>
-          <a href="" class="footer__link">Server</a>
-          <a href="" class="footer__link">Countries</a>
-          <a href="" class="footer__link">Blog</a>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Engage</h3>
-          <a href="" class="footer__link">LaslesVPN ? </a>
-          <a href="" class="footer__link">FAQ</a>
-          <a href="" class="footer__link">Tutorials</a>
-          <a href="" class="footer__link">About Us</a>
-          <a href="" class="footer__link">Privacy Policy</a>
-          <a href="" class="footer__link">Terms of Service</a>
-        </div>
-        <div class="footer__column">
-          <h3 class="footer__title">Earn Money</h3>
-          <a href="" class="footer__link">Affiliate</a>
-          <a href="" class="footer__link">Become Partner</a>
+        <div class="footer__columns">
+          <div class="footer__column">
+            <h3 class="footer__title">Product</h3>
+            <a href="" class="footer__link">Download</a>
+            <a href="" class="footer__link">Pricing</a>
+            <a href="" class="footer__link">Locations</a>
+            <a href="" class="footer__link">Server</a>
+            <a href="" class="footer__link">Countries</a>
+            <a href="" class="footer__link">Blog</a>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Engage</h3>
+            <a href="" class="footer__link">LaslesVPN ? </a>
+            <a href="" class="footer__link">FAQ</a>
+            <a href="" class="footer__link">Tutorials</a>
+            <a href="" class="footer__link">About Us</a>
+            <a href="" class="footer__link">Privacy Policy</a>
+            <a href="" class="footer__link">Terms of Service</a>
+          </div>
+          <div class="footer__column">
+            <h3 class="footer__title">Earn Money</h3>
+            <a href="" class="footer__link">Affiliate</a>
+            <a href="" class="footer__link">Become Partner</a>
+          </div>
         </div>
       </div>
     </div>
